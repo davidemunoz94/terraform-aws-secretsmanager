@@ -3,7 +3,7 @@ data "aws_organizations_organization" "current" {
 }
 
 module "credentials" {
-  source = "git::https://github.com/Coalfire-CF/terraform-aws-secretsmanager?ref=v2.1.7"
+  source = "git::https://github.com/Coalfire-CF/terraform-aws-secretsmanager?ref=vX.X.X"
   providers = {
     aws = aws.mgmt
   }
