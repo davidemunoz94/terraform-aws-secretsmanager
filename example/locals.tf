@@ -1,8 +1,8 @@
 locals {
   global_tags = {
     Application = "Application Name" # Update as needed
-    Owner       = "Coalfire"         # Update as needed
-    Team        = "Coalfire"         # Update as needed
+    Owner       = "Platform Team"    # Update as needed
+    Team        = "Platform Team"    # Update as needed
     Environment = "prod"             # Update as needed
   }
 

@@ -1,5 +1,3 @@
-![Coalfire](coalfire_logo.png)
-
 # terraform-aws-secretsmanager
 
 ## Description
@@ -27,7 +25,7 @@ data "aws_organizations_organization" "current" {
 }
 
 module "credentials" {
-  source = "github.com/Coalfire-CF/terraform-aws-secretsmanager?ref=v2.0.5"
+  source = "./aws-secretsmanager"
   providers = {
     aws = aws.mgmt
   }
@@ -211,13 +209,6 @@ No modules.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/license/mit/)
 
-## Contact Us
-
-[Coalfire](https://coalfire.com/)
-
-### Copyright
-
-Copyright © 2023 Coalfire Systems Inc.
 ## Tree
 ```
 .
@@ -225,7 +216,6 @@ Copyright © 2023 Coalfire Systems Inc.
 |-- CONTRIBUTING.md
 |-- LICENSE
 |-- README.md
-|-- coalfire_logo.png
 |-- example
 |   |-- locals.tf
 |   |-- main.tf
